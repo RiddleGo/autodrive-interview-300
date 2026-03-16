@@ -1,16 +1,17 @@
-# Push autodrive-interview-300 to GitHub (create repo first at https://github.com/new?name=autodrive-interview-300)
+# Push autodrive-interview-300 to GitHub（仓库已创建：RiddleGo/autodrive-interview-300）
+# 在项目目录执行：$env:GH_TOKEN = "你的 token"; .\deploy-to-github.ps1
 $ErrorActionPreference = "Stop"
-$repo = "dreamc60/autodrive-interview-300"
+$repo = "RiddleGo/autodrive-interview-300"
 $localPath = "d:\vibecoding\autodrive-interview-300"
 
 if (-not $env:GH_TOKEN) {
-    Write-Host "Please set token: `$env:GH_TOKEN = `"your_github_token`""
+    Write-Host "请先设置 token: `$env:GH_TOKEN = `"你的token`""
     exit 1
 }
 
 Push-Location $localPath
 try {
-    $url = "https://dreamc60:$($env:GH_TOKEN)@github.com/$repo.git"
+    $url = "https://RiddleGo:$($env:GH_TOKEN)@github.com/$repo.git"
     git remote remove origin 2>$null
     git remote add origin $url
     git push -u origin main
