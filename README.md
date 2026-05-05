@@ -47,6 +47,17 @@
 - 按题号在对应模块下查找文章。
 - 每篇文章含 **完整讲解 + 面试要点 + 记忆要点**。
 
+### 单页复习页 `study.html`
+
+根目录 **[study.html](./study.html)** 由 **`build_study_html.py`** 根据全库 `.md` 自动生成（目录 + 搜索 + 随机一篇），适合浏览器离线通读。更新正文后请执行：
+
+```bash
+pip install markdown
+python build_study_html.py
+```
+
+页面标题由 **`study_html_meta.txt`** 配置（三行：主标题、副标题、浏览器标题可选）。
+
 ---
 
 ## 索引（1–15 题：深度学习基础）
