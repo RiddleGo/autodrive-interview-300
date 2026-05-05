@@ -49,7 +49,10 @@
 
 ### 单页复习页 `study.html`
 
-根目录 **[study.html](./study.html)** 由 **`build_study_html.py`** 根据全库 `.md` 自动生成（目录 + 搜索 + 随机一篇），适合浏览器离线通读。更新正文后请执行：
+- **本地**：[study.html](./study.html)。
+- **在线（网页渲染）**：[**https://riddlego.github.io/autodrive-interview-300/study.html**](https://riddlego.github.io/autodrive-interview-300/study.html)（**勿用** `raw.githubusercontent.com` / **Raw**。）
+
+由 **`build_study_html.py`** 根据全库 `.md` 自动生成。更新正文后请执行：
 
 ```bash
 pip install markdown
